@@ -1,0 +1,156 @@
+* :not(input) {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    
+}
+body{
+    background-color:#d0ecf0 ;
+
+}
+header{
+    margin: 0;
+}
+
+header #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a{
+    color: #A49393;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family:Roboto,sans serif;}
+    
+    a:hover{
+    color:#ffffff;
+    text-decoration: underline;
+    transform: translateY(0);
+    transition-duration: 0,4s;
+}
+
+main{
+    /* display: flex; */
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+#profile{
+    width: 400px;
+}
+
+#h1{
+    gap: 30px;
+}
+
+#description{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: relative;
+    line-height: 160px;
+    font-size: 100px;
+    color: #ffffff;
+    font-family: 'roboto',sans-serif;
+    padding: 10px 20px 20px 0px;
+}
+
+h2{
+    position: absolute;
+    transform: translate(25%, -191%);
+    font-size: 50px;
+    color: #A49393;
+    font-family:'syne mono', sans-serif ;
+
+}
+
+p{
+    color: #ffffff;
+}
+
+#CVModal {
+    display: none; /* hidden by default */
+    position: fixed; /*fix it in place */
+    z-index: 1; /* fixed on top of the page */
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.close :hover {
+    color: #aaa;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#PModal {
+    color: #000;
+}
+
+#Modalcontent {
+    background-color: #fff;
+    margin: auto;
+    padding: 30px 20px;
+    border: solid 2px #222222;
+    width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #container {
+        flex-direction: column-reverse;
+    }
+
+    h2 {
+        font-size: 30px;
+        transform: translate(25%, -300%);
+    }
+
+    #navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #header {
+        margin-top: 20px;
+    }
+}
+
