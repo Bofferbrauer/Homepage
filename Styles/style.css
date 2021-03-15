@@ -115,7 +115,7 @@ p{
     font-weight: 700;
 }
 
-.close :hover {
+.close:hover {
     color: #aaa;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.3);
