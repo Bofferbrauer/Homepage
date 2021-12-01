@@ -38,7 +38,7 @@ ul {
 #navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 
 }
 
@@ -199,9 +199,13 @@ p{
     text-decoration: underline;
 }
 
-/* footer {
+footer {
     background-color: lightslategrey;
-} */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+}
 
 @media screen and (max-width: 768px) {
 
