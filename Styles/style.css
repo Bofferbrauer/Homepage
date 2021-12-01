@@ -2,18 +2,24 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    
 }
-body{
+
+#WIP {
+    max-height: 320px;
+    display: block;
+    margin: auto;
+}
+
+body {
     background-color:#d0ecf0 ;
+    background-image: url("/Images/63507.jpg");
 
 }
-header{
+header {
     margin: 0;
 }
 
-header #header{
+header #header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
@@ -24,11 +30,16 @@ header #header{
     height: 200px;
 }
 
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
 #navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
+
 }
 
 ul li a{
@@ -44,6 +55,45 @@ ul li a{
     transform: translateY(0);
     transition-duration: 0,4s;
 }
+
+ul label {
+    color: #A49393;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family:Roboto,sans serif;}
+    
+    label:hover{
+    color:#ffffff;
+    text-decoration: underline;
+    transform: translateY(0);
+    transition-duration: 0,4s;
+    cursor: pointer;
+}
+
+ul input {
+    display: none;
+}
+
+#projectList {
+    /* padding-bottom: 10px; */
+    max-height: 0px;
+    overflow: hidden;
+
+}
+
+#Portfolio {
+    padding: 5px 20px;
+}
+
+input:checked ~ #projectList {
+    max-height: 100%;
+
+}
+
+/* #Portfolio a {
+    display: block;
+} */
 
 main{
     /* display: flex; */
@@ -134,17 +184,24 @@ p{
 }
 
 #CVpopup {
-    border: none;
     font-size: 24px;
+    background-color: navajowhite;
     color: blue;
-    background-color: #d0ecf0;
-    padding-left: 20%;
+    margin-left: 20%;
+    padding: 5px 10px;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: lightslategrey 0px 5px 5px 0px;
 }
 
 #CVpopup:hover {
     font-weight: 700;
     text-decoration: underline;
 }
+
+/* footer {
+    background-color: lightslategrey;
+} */
 
 @media screen and (max-width: 768px) {
 
