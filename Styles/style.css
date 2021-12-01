@@ -22,7 +22,7 @@ header {
 header #header {
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: flex-start;  
 }
 
 #logo{
@@ -37,8 +37,8 @@ ul {
 
 #navbar {
     display: flex;
-    justify-content: center;
     align-items: baseline;
+    text-align: center;
 
 }
 
@@ -184,10 +184,12 @@ p{
 }
 
 #CVpopup {
+    display: block;
     font-size: 24px;
     background-color: navajowhite;
     color: blue;
-    margin-left: 20%;
+    margin: auto;
+    margin-top: 20px;
     padding: 5px 10px;
     border-width: 5px;
     border-radius: 10px;
@@ -205,6 +207,10 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 12px;
+}
+
+h5 {
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
