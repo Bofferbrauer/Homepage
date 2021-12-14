@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+/*
+colors used:
+#d0ecf0 ; Light blue background color
+#A49393; Gray text color
+
+*/
+
 #WIP {
     max-height: 320px;
     display: block;
@@ -53,7 +60,7 @@ ul li a{
     color:#ffffff;
     text-decoration: underline;
     transform: translateY(0);
-    transition-duration: 0,4s;
+    transition-duration: 1s;
 }
 
 ul label {
@@ -67,7 +74,7 @@ ul label {
     color:#ffffff;
     text-decoration: underline;
     transform: translateY(0);
-    transition-duration: 0,4s;
+    transition-duration: 1s;
     cursor: pointer;
 }
 
@@ -77,7 +84,7 @@ ul input {
 
 #projectList {
     /* padding-bottom: 10px; */
-    max-height: 0px;
+    max-height: 00px;
     overflow: hidden;
 
 }
@@ -90,6 +97,7 @@ input:checked ~ #projectList {
     max-height: 100%;
 
 }
+
 
 /* #Portfolio a {
     display: block;
@@ -190,7 +198,8 @@ p{
     color: blue;
     margin: auto;
     margin-top: 20px;
-    padding: 5px 10px;
+    width: 245px;
+    height: 55px;
     border-width: 5px;
     border-radius: 10px;
     box-shadow: lightslategrey 0px 5px 5px 0px;
@@ -199,6 +208,10 @@ p{
 #CVpopup:hover {
     font-weight: 700;
     text-decoration: underline;
+    color: #d0ecf0;
+    background-color: #A49393;;
+    transition: all 2s;
+    border-color: whitesmoke;
 }
 
 footer {
