@@ -214,6 +214,10 @@ p{
     border-color: whitesmoke;
 }
 
+#profile {
+    border-radius: 50%;
+}
+
 footer {
     background-color: lightslategrey;
     position: absolute;
