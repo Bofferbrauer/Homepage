@@ -18,6 +18,7 @@ colors used:
     --color-white: #ffffff;
     --color-black: #000;
     --color-gray: #a49393;
+    --color-gray2: #aaa;
 }
 
 #WIP {
@@ -29,6 +30,7 @@ colors used:
 body {
     background-color: var(--color-primary);
     font-size: 1.2rem;
+    color: var(--color-gray);
     /* background-image: url("/Images/63507.jpg"); */
 
 }
@@ -59,28 +61,28 @@ ul {
 }
 
 ul li a{
-    color: #A49393;
+    color: var(--color-gray);
     text-decoration: none;
     padding: 10px 20px;
     font-size: 25px;
     font-family:Roboto,sans serif;}
     
     a:hover{
-    color:#ffffff;
+    color:var(--color-white);
     text-decoration: underline;
     transform: translateY(0);
     transition-duration: 1s;
 }
 
 ul label {
-    color: #A49393;
+    color: var(--color-gray);
     text-decoration: none;
     padding: 10px 20px;
     font-size: 25px;
     font-family:Roboto,sans serif;}
     
     label:hover{
-    color:#ffffff;
+    color:var(--color-white);
     text-decoration: underline;
     transform: translateY(0);
     transition-duration: 1s;
@@ -146,7 +148,7 @@ h1{
     position: relative;
     line-height: 180px;
     font-size: 100px;
-    color: #ffffff;
+    color: var(--color-white);
     font-family: 'roboto',sans-serif;
     padding: 10px 20px 20px 10px;
 }
@@ -155,13 +157,13 @@ h2{
     position: absolute;
     transform: translate(30%, -222%);
     font-size: 50px;
-    color: #A49393;
+    color: var(--color-gray);
     font-family:'syne mono', sans-serif ;
 
 }
 
 p{
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 #CVModal {
@@ -183,17 +185,17 @@ p{
 }
 
 .close:hover {
-    color: #aaa;
+    color: var(--color-gray2);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 #PModal {
-    color: #000;
+    color: var(--color-black);
 }
 
 #Modalcontent {
-    background-color: #fff;
+    background-color: var(--color-white);
     margin: auto;
     padding: 30px 20px;
     border: solid 2px #222222;
@@ -219,7 +221,7 @@ p{
     font-weight: 700;
     text-decoration: underline;
     color: #d0ecf0;
-    background-color: #A49393;;
+    background-color: var(--color-gray);;
     transition: all 2s;
     border-color: whitesmoke;
 }
