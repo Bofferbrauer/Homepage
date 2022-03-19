@@ -19,6 +19,8 @@ colors used:
     --color-black: #000;
     --color-gray: #a49393;
     --color-gray2: #aaa;
+    --color-gray3: lightslategrey;
+    --color-dark-gray: #222222;
 }
 
 #WIP {
@@ -198,7 +200,7 @@ p{
     background-color: var(--color-white);
     margin: auto;
     padding: 30px 20px;
-    border: solid 2px #222222;
+    border: solid 2px var(--color-dark-gray);
     width: 90%;
 }
 
@@ -213,14 +215,14 @@ p{
     height: 55px;
     border-width: 5px;
     border-radius: 10px;
-    box-shadow: lightslategrey 0px 5px 5px 0px;
+    box-shadow: var(--color-gray3) 0px 5px 5px 0px;
     transition: all 2s;
 }
 
 #CVpopup:hover {
     font-weight: 700;
     text-decoration: underline;
-    color: #d0ecf0;
+    color: var(--color-primary);
     background-color: var(--color-gray);;
     transition: all 2s;
     border-color: whitesmoke;
@@ -231,11 +233,11 @@ p{
 }
 
 footer {
-    background-color: lightslategrey;
-    position: absolute;
+    background-color: var(--color-gray3);
+    position: sticky;
     bottom: 0;
     width: 100%;
-    padding: 12px;
+    padding: 1.2rem;
 }
 
 h5 {
