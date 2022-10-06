@@ -79,10 +79,9 @@ ul li a{
     transition-duration: 1s;
 }
 
-ul label {
+ul li label {
     color: var(--color-gray);
     text-decoration: none;
-    padding: 10px 20px;
     font-size: 25px;
     font-family:Roboto,sans serif;}
     
@@ -261,7 +260,7 @@ h5 {
     #navbar {
         /* flex-direction: row; */
         height: 100%; /* Full height sidebar menu */
-        width: 300px; /* Will get changed with Javascript later */
+        width: 200px; /* 200 testing, 0 production. Will get changed with Javascript later */
         position: fixed;
         z-index: 1; /* Stay on top/overlay the website */
         top: 0;
@@ -272,12 +271,8 @@ h5 {
         transition: 0.8s;
     }
 
-    ul label {
-        padding: 0;
-    }
 
-
-    #navbar li, #Portfolio {
+    #navbar li {
         padding: 10px 10px 10px 30px;
         text-decoration: none;
         font-size: 28px;
