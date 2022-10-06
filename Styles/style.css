@@ -43,7 +43,8 @@ header {
 header #header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;  
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
 #logo{
@@ -59,6 +60,8 @@ ul {
     display: flex;
     align-items: baseline;
     text-align: center;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
@@ -103,7 +106,7 @@ ul input {
 }
 
 #Portfolio {
-    padding: 5px 20px;
+    padding: 5px 20px 5px 0px;
 }
 
 input:checked ~ #projectList {
@@ -128,7 +131,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
 
 }
 
@@ -157,8 +160,8 @@ h1{
 
 h2{
     position: absolute;
-    transform: translate(30%, -222%);
-    font-size: 50px;
+    transform: translate(25%, -300%);
+    font-size: 30px;
     color: var(--color-gray);
     font-family:'syne mono', sans-serif ;
 
@@ -244,24 +247,51 @@ h5 {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
 
     #container {
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
     }
 
     h2 {
-        font-size: 30px;
-        transform: translate(25%, -300%);
+        font-size: 50px;
+        transform: translate(30%, -222%);
     }
 
     #navbar {
-        flex-direction: column;
-        gap: 20px;
+        /* flex-direction: row; */
+        height: 100%; /* Full height sidebar menu */
+        width: 300px; /* Will get changed with Javascript later */
+        position: fixed;
+        z-index: 1; /* Stay on top/overlay the website */
+        top: 0;
+        left: 0;
+        background-color: var(--color-secondary);
+        overflow-x: hidden;
+        padding-top: 50px;
+        transition: 0.8s;
+    }
+
+    ul label {
+        padding: 0;
+    }
+
+
+    #navbar li, #Portfolio {
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 28px;
+        color: var(--color-gray2);
+        display: block;
+        transition: 0.5s;
+    }
+
+    #navbar li:hover, #navbar div:hover {
+        color: var(--color-primary);
     }
 
     #header {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 }
 
