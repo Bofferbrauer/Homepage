@@ -288,5 +288,9 @@ h5 {
     #header {
         margin-top: 0px;
     }
-}
+    
+    #Copyright {
+        text-align: center;
+    }
 
+}
