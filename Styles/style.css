@@ -43,13 +43,17 @@ header {
 header #header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 20px;
 }
 
 #logo{
     width: 200px;
     height: 200px;
+}
+
+#WIP {
+    width: 12rem;
 }
 
 ul {
@@ -257,23 +261,33 @@ h5 {
         transform: translate(30%, -222%);
     }
 
+    #header {
+        justify-content: space-between;
+    }
+
+    #mainmenu {
+        padding-right: 30px;
+        font-size: 2.8rem;
+    }
+
     #navbar {
         /* flex-direction: row; */
         height: 100%; /* Full height sidebar menu */
-        width: 200px; /* 200 testing, 0 production. Will get changed with Javascript later */
+        width: 0px; /* 200 testing, 0 production. Will get changed with Javascript later */
         position: fixed;
         z-index: 1; /* Stay on top/overlay the website */
         top: 0;
         left: 0;
         background-color: var(--color-secondary);
-        overflow-x: hidden;
-        padding-top: 50px;
+        overflow-x: hidden; /* No horizontal scrolling */
+        padding-top: 20px;
         transition: 0.8s;
+        align-items: center;
     }
 
 
     #navbar li {
-        padding: 10px 10px 10px 30px;
+        padding: 10px;
         text-decoration: none;
         font-size: 28px;
         color: var(--color-gray2);
@@ -283,6 +297,22 @@ h5 {
 
     #navbar li:hover, #navbar div:hover {
         color: var(--color-primary);
+        font-weight: 700;
+    }
+
+    #navbar .closeMenu {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 32px;
+        margin-left: 30px;
+        /* transition: 0s; */
+    }
+
+    #navbar .closeMenu:hover {
+        text-decoration: none;
+        color: var(--color-primary);
+        /* color: red; for testing */
     }
 
     #header {
@@ -291,6 +321,11 @@ h5 {
     
     #Copyright {
         text-align: center;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
     }
 
 }
