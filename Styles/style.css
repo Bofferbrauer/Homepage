@@ -198,6 +198,11 @@ p{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.fa-solid:hover {
+    color: var(--color-gray2);
+    cursor: pointer;
+}
+
 #PModal {
     color: var(--color-black);
 }
