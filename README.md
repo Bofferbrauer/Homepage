@@ -1,2 +1,2 @@
 # Homepage
- My homepage with CV and Portfolio
+ My homepage with Resume/CV and Portfolio, made with Vanilla JS. Still under construction.
