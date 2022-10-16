@@ -21,6 +21,7 @@ colors used:
     --color-gray2: #aaa;
     --color-gray3: lightslategrey;
     --color-dark-gray: #222222;
+    --color-light-green2:#57f85fa1;
 }
 
 #WIP {
@@ -126,7 +127,8 @@ main{
     /* display: flex; */
     justify-content:space-between;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px;  Used before individual styling for rough preview*/ 
+    padding-bottom: 130px; /* Space for the sticky footer */
 
 }
 
@@ -251,13 +253,19 @@ footer {
     padding: 1.2rem;
 }
 
-h2 {
+h2, h3, h4, h5 {
     text-align: center;
 }
 
-h5 {
+.softskills, .hardskills {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.softskills {
     text-align: center;
 }
+
 
 @media screen and (min-width: 1024px) {
 
@@ -337,4 +345,58 @@ h5 {
         bottom: 0;
     }
 
+    #Soskills {
+        width: 100%;
+        background-color: var(--color-gray2);
+        color: var(--color-secondary);
+    }
+
+    #Soft {
+        justify-content: space-between;
+    }
+
+    .softskills {
+        align-items: start;
+        column-count: 3;
+        column-width: 30%;
+        column-fill: balance;
+        padding: 10px;
+        padding-left: 10%;
+        column-rule: 1px solid var(--color-secondary);
+        max-width: 90%;
+    }
+
+    .softskills li {
+        padding-left: 10px;
+    }
+
+    .hardskills {
+        max-width: 95%;
+        padding: 10px;
+        padding-left: 2%;
+
+    }
+
+    .hardskills li {
+        background-color: var(--color-gray);
+        color: var(--color-white);
+        margin: 5px;
+        border-radius: 15px;
+        
+    }
+
+    .skills {
+        background-color: var(--color-light-green2);
+        width: 0%; /*To be set by Javascript */
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+    }
+
+
+    #haskills {
+        justify-content: space-between;
+    }
 }
