@@ -11,46 +11,85 @@ closeMenu.onclick = function () {
 }
 
 const outOfTen = document.querySelectorAll(".outoften");
-const skill = outOfTen.parentElement
-console.log(skill)
-const SkillNumber = outOfTen.textconent
-// console.log(SkillNumber.text)
-const skillBar = document.querySelectorAll(".skills");
+console.log(outOfTen.values())
+console.log(outOfTen)
 
-for(value of outOfTen) {
-    const theValue = value.innerHTML
-    console.log(value.innerHTML)  
-    
-    console.log(skill)
-    {
-        if (theValue == '9') {
-            skillChart.style.width = "90%"
-            console.log("great!")
-        } else if (theValue == 8) {
-            skillChart.style.width = "80%"
-            console.log("good")
-        } else if (theValue == 7) {
-            skillChart.style.width = "70%"
-        } else if (theValue == 6) {
-            skillChart.style.width = "60%"
-        } else if (theValue == 5) {
-            skillChart.style.width = "50%"
-        } else if (theValue == 4) {
-            skillChart.style.width = "40%"
-        } else if (theValue == 3) {
-            skillChart.style.width = "30%"
-        } else if (theValue == 2) {
-            skillChart.style.width = "20%"
-        } else if (theValue == 1) {
-            skillChart.style.width = "10%"
-        } else {
-            console.log(theValue)
-            console.log(skillChart)
-            outOfTen.innerHTML = "Skill not found"
-            skillBar.style.width = "100%"
-            skillBar.style.background = "red"
-            console.log("Boo!")
+for(const SkillNode of outOfTen) {
+    console.log(SkillNode)
+    const SkillNumber = SkillNode.firstChild.data
+    console.log(SkillNumber)
+
+    const skillBars = document.querySelectorAll(".skills");
+    console.log(skillBars)
+    for(const skillBar in skillBars.values()) {
+        console.log(skillBar)
+        function Skill(skillBar, SkillNumber) {
+             if (SkillNumber == '9') {
+                skillBar.style.width = "90%"
+                console.log(SkillNumber)
+                console.log("great!")
+            } else if (SkillNumber == 8) {
+                outOfTen.style.width = "80%"
+                console.log(SkillNumber)
+                console.log("good")
+            } else if (SkillNumber == 7) {
+                outOfTen.style.width = "70%"
+                console.log(SkillNumber)
+            } else if (SkillNumber == 6) {
+                outOfTen.style.width = "60%"
+            } else if (SkillNumber == 5) {
+                outOfTen.style.width = "50%"
+            } else if (SkillNumber == 4) {
+                outOfTen.style.width = "40%"
+            } else if (SkillNumber == 3) {
+                outOfTen.style.width = "30%"
+            } else if (SkillNumber == 2) {
+                outOfTen.style.width = "20%"
+            } else if (SkillNumber == 1) {
+                outOfTent.style.width = "10%"
+            } else {
+                console.log(SkillNumber)
+                console.log(outOfTen)
+                outOfTen.innerHTML = "Skill not found"
+                outOfTen.style.width = "100%"
+                outOfTen.style.background = "red"
+                console.log("Boo!")
+            };
         }
     }
-    
-};
+}
+
+// console.log(SkillNumber.text)
+// const skillBar = document.querySelectorAll(".skills");
+
+// if (SkillNumber == '9') {
+//     outOfTen.style.width = "90%"
+//     console.log(SkillNumber)
+//     console.log("great!")
+// } else if (SkillNumber == 8) {
+//     outOfTen.style.width = "80%"
+//     console.log(SkillNumber)
+//     console.log("good")
+// } else if (SkillNumber == 7) {
+//     outOfTen.style.width = "70%"
+//     console.log(SkillNumber)
+// } else if (SkillNumber == 6) {
+//     outOfTen.style.width = "60%"
+// } else if (SkillNumber == 5) {
+//     outOfTen.style.width = "50%"
+// } else if (SkillNumber == 4) {
+//     outOfTen.style.width = "40%"
+// } else if (SkillNumber == 3) {
+//     outOfTen.style.width = "30%"
+// } else if (SkillNumber == 2) {
+//     outOfTen.style.width = "20%"
+// } else if (SkillNumber == 1) {
+//     outOfTent.style.width = "10%"
+// } else {
+//     console.log(SkillNumber)
+//     console.log(outOfTen)
+//     outOfTen.innerHTML = "Skill not found"
+//     outOfTen.style.width = "100%"
+//     outOfTen.style.background = "red"
+//     console.log("Boo!")
+// };
