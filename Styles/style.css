@@ -15,6 +15,7 @@ colors used:
 :root {
     --color-primary: #d0ecf0;
     --color-secondary: #111344;
+    --color-secondary-translucent: #111344c9;
     --color-white: #ffffff;
     --color-black: #000;
     --color-gray: #a49393;
@@ -22,6 +23,13 @@ colors used:
     --color-gray3: lightslategrey;
     --color-dark-gray: #222222;
     --color-light-green2:#57f85fa1;
+    --color-skill-9: #18eb11;
+    --color-skill-8: #97eb11;
+    --color-skill-7: #a0df0d;
+    --color-skill-6: #cee40a;
+    --color-skill-5: #eff307;
+    --color-skill-4: #ecdd0a;
+    --color-skill-3: #e7ab04;
 }
 
 #WIP {
@@ -271,6 +279,7 @@ h2, h3, h4, h5 {
 
     #container {
         flex-direction: row-reverse;
+        padding: 10px;
     }
 
     #Jobdescription {
@@ -280,6 +289,8 @@ h2, h3, h4, h5 {
 
     #header {
         justify-content: space-between;
+        flex-direction: row-reverse;
+        padding:  5px 2rem;
     }
 
     #mainmenu {
@@ -295,7 +306,7 @@ h2, h3, h4, h5 {
         z-index: 1; /* Stay on top/overlay the website */
         top: 0;
         left: 0;
-        background-color: var(--color-secondary);
+        background-color: var(--color-secondary-translucent);
         overflow-x: hidden; /* No horizontal scrolling */
         padding-top: 20px;
         transition: 0.8s;
@@ -374,7 +385,6 @@ h2, h3, h4, h5 {
         max-width: 95%;
         padding: 10px;
         padding-left: 2%;
-
     }
 
     .hardskills li {
@@ -382,11 +392,12 @@ h2, h3, h4, h5 {
         color: var(--color-white);
         margin: 5px;
         border-radius: 15px;
-        
+        border: 1px solid var(--color-black);
     }
 
     .skills {
         background-color: var(--color-light-green2);
+        color: var(--color-secondary);
         width: 0%; /*To be set by Javascript */
         padding: 5px 10px;
         display: flex;
@@ -395,6 +406,40 @@ h2, h3, h4, h5 {
         border-radius: 15px;
     }
 
+    .html, .sql {
+        width: 90%;
+        background-color: var(--color-skill-9);
+    }
+
+    .css, .BS, .WP, .fastapi {
+        width: 80%;
+        background-color: var(--color-skill-8);
+    }
+
+    .js, .Ajax, .php, .Nsql, .pgsql, .python, .node {
+        width: 70%;
+        background-color: var(--color-skill-7);
+    }
+
+    .React, .lar, .mule {
+        width: 60%;
+        background-color: var(--color-skill-6);
+    }
+
+    .Angular, .Vue {
+        width: 50%;
+        background-color: var(--color-skill-5);
+    }
+
+    .JQ, .Bubble {
+        width: 40%;
+        background-color: var(--color-skill-4);
+    }
+
+    .Ionic, .Low {
+        width: 30%;
+        background-color: var(--color-skill-3);
+    }
 
     #haskills {
         justify-content: space-between;
