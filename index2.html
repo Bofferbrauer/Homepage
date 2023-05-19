@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This page is supposed to become the main page once everything is set up. It will show the contents of all 3 pages in one page, scropping by entire pages
+-->
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/e2a253c429.js"></script>
+    <title>Portfolio homepage</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img id="logo" src="Images/Weidig_Steve_Junior_Fullstack_Developer-transparent.png" alt="Logo">
+            <img id="WIP" src="Images/63507.jpg" alt="Site under Construction">
+            <nav id="mainmenu">
+                <i class="fa-solid fa-bars"></i>
+                <ul id="navbar">
+                    <li><a class="closeMenu" href="javascript:void(0)">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/skills.html">Skills</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <!-- <div id="img"></div> This div is too much -->
+            <img id="profile" src="Images/STEVE WEIDIG mugshot.png" alt="">
+            <div id=description>
+                <div id="h1">
+                    <!-- Never use more than one h1 -->
+                    <h1 id="MyName">Steve <br> Weidig</h1>
+                </div>
+                <h2 id="Jobdescription">Junior Full-stack Web<br>
+                    and API Developer</h2>
+            </div>
+
+            <!-- <P>Creative and passionate Junior Front-End Developper, Creating 
+                    Responsive websites and applications from concept, navigation, layout and programming
+                    using AdobeXD,HTML,CSS,JavaScript,Jquery.
+                    Cooperating with the team to support projects and share ideas and knowledge.
+                    A constant learner and curious personn to enhance my skills and be up-to-date developer.
+                    Passionat with design, photography, and painting.</P> -->
+
+        </div>
+        <section>
+            <button id="CVpopup">Open printable CV</button>
+            <div id="CVModal">
+                <div id="Modalcontent">
+                    <!-- <a href="Files/JuniorWebDeveloperResumeSteveWEIDIG.pdf">CV</a>
+                    <button id="printCV">Print the CV</button> -->
+                    <!-- ? iframe works better than using a href as it includes the download and print options automatically -->
+                        <iframe src="Files/Junior Developer Resume Steve WEIDIG.pdf" style="width: 100%; height: 90vh; border: none;"></iframe>
+                    <span class="close"> &times;</span>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="socialM">
+            <a href="https://www.linkedin.com/in/steve-weidig/"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+        <p id="Copyright">Picture copyright: <a href='https://www.freepik.com/vectors/construction'>Construction vector created by studiogstock - www.freepik.com</a></p>
+        <h5>&copy; Weidig Steve 2023</h5>
+    </footer>
+
+    <script src="Scripts/Script.js"></script>
+</body>
+
+</html>
